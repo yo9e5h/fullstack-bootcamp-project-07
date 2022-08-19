@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #ff5f50;
+}
+
+body {
+  padding: 3% 6%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------- Navbar start ------------- */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem 0 0;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 3% 6%;
+  }
+  .nav-items {
+    display: none;
+  }
+  .logo {
+    height: 2rem;
+  }
+  .intro-section {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .headphone {
+    width: 95%;
+    height: auto;
+  }
+  .text {
+    padding: 1rem 4rem 0 0;
+  }
+}
+
+.nav-item {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.nav-item.active-item {
+  color: var(--orange);
+}
+
+/* ------------- Navbar end ------------- */
+
+/* ------------- Section start ------------- */
+
+.intro-section {
+  padding: 2rem 0;
+  display: flex;
+  width: 100vw;
+}
+
+.intro-section .left-section {
+  padding-top: 3.125rem;
+}
+
+/* ------------- Left section start ------------- */
+.left-section h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.left-section h3 img {
+  height: 2rem;
+}
+
+.left-section h1 {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 3.75rem;
+  font-weight: normal;
+  padding-top: 0.625rem;
+}
+
+.sub-headlines {
+  padding: 1.5rem 3.5rem 1.5rem 0;
+}
+
+.sub-headline {
+  font-size: 1.75rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.sub-headline img {
+  background-color: var(--orange);
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+
+.left-section .text {
+  font-size: 1rem;
+  color: #c8c8c8;
+}
+
+.left-section .action-btns {
+  margin-top: 2.125rem;
+}
+
+.left-section .action-btn {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--orange);
+  color: #ffffff;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+/* ------------- Left section end ------------- */
+
+/* ------------- Roght section start ------------- */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  left: -10%;
+  bottom: 15%;
+  height: 7.5rem;
+}
+
+.discount-content {
+  position: absolute;
+  left: -3%;
+  bottom: 22%;
+  font-family: "Fredoka One", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.discount-content h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.discount-content h1 {
+  font-size: 2.125rem;
+  font-weight: normal;
+}
+
+img[alt="headphone"] {
+  height: 420px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  padding: 0.675rem 0;
+}
+
+.dots .dot {
+  height: 2.125rem;
+  width: 2.125rem;
+  border-radius: 13px;
+}
+
+.dot.yellow-dot {
+  background-color: #f7cd2e;
+}
+
+.dot.tomato-dot {
+  background-color: var(--orange);
+}
+
+.dot.black-dot {
+  background-color: #000000;
+}
+
+.right-section .action-btn {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--orange);
+  color: #ffffff;
+  border-radius: 2.125rem;
+  border: none;
+  padding: 0.625rem 2.125rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* ------------- Right section end ------------- */
+
+/* ------------- Section end ------------- */
